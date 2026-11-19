@@ -1,1 +1,152 @@
+/* Footer Srction */
+.footer {
+  background-color: #f2f0f1;
+  margin-top: 120px;
+  padding: 1px 0 40px;
+}
 
+.footer-wrapper {
+  position: relative;
+}
+
+.subscribe-box {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 36px 48px;
+  width: 100%;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: 35px;
+}
+
+.subscribe-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.email-box {
+  background-color: #fff;
+  border-radius: 999px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.email-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.subscribe-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.footer-content {
+  padding-top: 20px;
+}
+
+.footer-logo {
+  color: #000000;
+  font-size: 33.45px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.social-icons a img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.footer-heading {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+  color: #000000;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 19px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+  margin-top: 40px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.copyright-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.payment-icons {
+  display: flex;
+  margin-left: auto;
+  gap: 12px;
+}
+
+.payment-icons img {
+  width: 46.61px;
+  height: 30.03px;
+  opacity: 1;
+  object-fit: contain;
+}
