@@ -1,3 +1,137 @@
+/* Navbar */
+.shop-navbar {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.shop-navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+/* Navigation Links */
+.shop-navbar .navbar-nav {
+  gap: 24px;
+}
+
+.shop-navbar .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* Search Bar */
+.nav-search {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-radius: 62px;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.nav-search img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-search input::placeholder {
+  color: #00000066;
+}
+
+/* Cart and Account Icons */
+.nav-actions {
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.nav-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-actions img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f2f0f1;
+  background-image: url("../images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 663px;
+}
+
+.hero-content {
+  max-width: 577px;
+  padding: 90px 0;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #00000099;
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 67.5px;
+  border-radius: 62px;
+}
+
+/* Stat Section */
+.hero-stats {
+  display: flex;
+  margin-top: 48px;
+}
+
+.stat {
+  padding: 0 32px;
+  border-right: 1px solid #ccc;
+}
+
+.stat h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.stat p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000099;
+}
+
+
 
 
 
@@ -153,4 +287,23 @@
   height: 30.03px;
   opacity: 1;
   object-fit: contain;
+}
+
+
+@media (max-width: 991px) {
+  .shop-navbar .navbar-collapse {
+    padding-top: 20px;
+  }
+
+  .shop-navbar .navbar-nav {
+    margin-bottom: 20px;
+  }
+
+  .nav-search {
+    margin-bottom: 20px;
+  }
+
+  .shop-navbar .navbar-brand {
+    font-size: 26px;
+  }
 }
