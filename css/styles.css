@@ -153,6 +153,115 @@
   object-fit: contain;
 }
 
+/* New Arrivals & Top Selling Section */
+.new-arrivals {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.new-arrivals .section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 55px;
+}
+
+.top-selling {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.top-selling .section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 55px;
+}
+
+/* Product Cards for both */
+.product-image {
+  border-radius: 20px;
+  /*height: 298px;
+  width: 295px;*/
+  aspect-ratio: 1;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.rating-stars {
+  color: #ffc633;
+  font-size: 18.49px;
+  display: flex;
+  gap: 5.31px;
+}
+
+.rating-number {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.current-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.old-price {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+}
+
+.discount {
+  background: rgba(255, 51, 51, 0.1019607843);
+  color: #ff3333;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 62px;
+}
+
+.view-all-btn {
+  display: inline-block;
+  height: 52px;
+  width: 218px;
+  padding: 16px 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 62px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 36px;
+}
+
 /* Footer Srction */
 .footer {
   background-color: #f2f0f1;
