@@ -262,6 +262,67 @@
   margin-top: 36px;
 }
 
+/* Customer Reviews Section */
+.review-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.reviews-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.review-heading h2 {
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 35px;
+  font-weight: 900;
+  color: black;
+  margin: 0;
+}
+
+/* Review Cards */
+.review-list {
+  display: flex;
+  gap: 16px;
+}
+
+.review-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.review-stars {
+  color: #ffc633;
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.review-card h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.verified {
+  color: #01ab31;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.review-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* Footer Srction */
 .footer {
   background-color: #f2f0f1;
