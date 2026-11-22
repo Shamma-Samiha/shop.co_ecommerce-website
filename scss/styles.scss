@@ -309,13 +309,6 @@
   color: #000;
 }
 
-
-
-
-
-
-
-
 /* Customer Reviews Section */
 .review-section {
   background-color: white;
@@ -392,24 +385,6 @@
   font-size: 16px;
   font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer Srction */
 .footer {
@@ -583,3 +558,126 @@
     font-size: 26px;
   }
 }
+
+/* Catagory Page */
+.catalogue-page {
+  padding: 100px 0;
+}
+
+.catalogue-page .breadcrumb {
+  margin-bottom: 24px;
+}
+
+.catalogue-page .breadcrumb a {
+  text-decoration: none;
+  color: #00000099;
+}
+
+/* Filter Sidebar */
+.filter-panel {
+  border: 1px solid #0000001A;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-title h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.filter-section h5 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.filter-section h5 i {
+  width: 11.5px;
+  height: 6.5px;
+  color: #00000099;
+
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 22.5px;
+  color: #00000099;
+}
+
+/* Price Slider */
+.filter-section .form-range {
+  accent-color: black;
+  margin-bottom: 24px;
+}
+
+.filter-section span {
+  font-size: 16px;
+}
+
+/* Colors */
+.filter-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15.5px;
+}
+
+.color-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #00000033;
+}
+
+/* Sizes */
+.filter-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-sizes button {
+  background-color: #f0f0f0;
+  color: #00000099;
+  border: none;
+  border-radius: 62px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-sizes .selected {
+  background-color: black;
+  color: white;
+}
+
+.apply-filter {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 62px;
+  padding: 14.5px 87.5px;
+  margin-top: 24px;
+}
+
+/* Catalogue Right part */
+

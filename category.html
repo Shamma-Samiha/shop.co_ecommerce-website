@@ -18,8 +18,235 @@
     <title>SHOP.CO</title>
   </head>
   <body>
-    <h1>Category Page</h1>
+    <main class="catalogue-page">
+      <div class="container">
 
+      <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg shop-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SHOP.CO</a>
+
+        <!-- Hamburger Button -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shopNavbar">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+
+        <!-- Navbar Content -->
+         <div class="collapse navbar-collapse" id="shopNavbar">
+          <ul class="navbar-nav ms-lg-4">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Shop</a>
+
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Men</a></li>
+                <li><a href="#" class="dropdown-item">Women</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="#sale" class="nav-link">On Sale</a></li>
+            <li class="nav-item"><a href="#new-arrivals" class="nav-link">New Arrivals</a></li>
+            <li class="nav-item"><a href="#brands" class="nav-link">Brands</a></li>
+
+          </ul>
+
+          <!-- Search Bar -->
+           <form class="nav-search d-flex align-items-center ms-lg-4" role="search">
+            <img src="images/search-icon.svg" alt="">
+
+            <input type="search" placeholder="Search for products...">
+           </form>
+
+          <!-- Cart r Account -->
+           <div class="nav-actions d-flex align-items-center ms-lg-4">
+
+            <a href="#"><img src="images/cart-icon.svg" alt="cart icon"></a>
+            <a href="#"><img src="images/people-icon.svg" alt="account icon"></a>
+
+           </div>
+         </div>
+
+      </div>
+     </nav>
+
+    <!-- Breadcrumd part -->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Casual</li>
+       </ol>
+    </nav>
+
+    <div class="row g-4">
+
+      <!-- Filters -->
+      <div class="col-12 col-lg-3">
+        <!-- Left Side -->
+        <aside class="filter-panel">
+          <div class="filter-title">
+            <h4>Filters</h4>
+            <i class="fa-solid fa-sliders"></i> 
+          </div>
+
+          <!-- Categories -->
+          <div class="filter-section">
+            <ul class="filter-list">
+              <li>T-shirts <span>&rsaquo;</span></li>
+              <li>Shorts <span>&rsaquo;</span></li>
+              <li>Shirts <span>&rsaquo;</span></li>
+              <li>Hoodie <span>&rsaquo;</span></li>
+              <li>Jeans <span>&rsaquo;</span></li>
+            </ul>
+          </div>
+
+
+          <!-- Price part -->
+          <div class="filter-section">
+            <h5>Price<i class="fa-solid fa-chevron-up"></i></h5>
+            <input type="range" class="form-range" min="50" max="200" value="150">
+
+            <div class="d-flex justify-content-between">
+              <span>$50</span>
+              <span>$200</span>
+            </div>
+
+          </div>
+
+          <!-- Colors section -->
+          <div class="filter-section">
+            <h5>Colors <i class="fa-solid fa-chevron-up"></i> </h5>
+
+            <div class="filter-colors">
+              <button type="button" class="color-dot" style="background: green"></button>
+              <button type="button" class="color-dot" style="background: red"></button>
+              <button type="button" class="color-dot" style="background: blue"></button>
+              <button type="button" class="color-dot" style="background: yellow"></button>
+              <button type="button" class="color-dot" style="background: purple"></button>
+              
+            </div>
+
+          </div>
+
+          <!-- Sizes -->
+          <div class="filter-section">
+            <h5>Size <i class="fa-solid fa-chevron-up"></i> </h5>
+
+            <div class="filter-sizes">
+              <button type="button">XX-Small</button>
+              <button type="button">X-Small</button>
+              <button type="button">Small</button>
+              <button type="button">Medium</button>
+              <button type="button">Large</button>
+              <button type="button">X-Large</button>
+              <button type="button">XX-Large</button>
+              <button type="button">3X-Large</button>
+            </div>
+
+          </div>
+
+          <!-- Dress Style -->
+          <div class="filter-section">
+            <h5>Size <i class="fa-solid fa=chevron-up"></i> </h5>
+
+            <ul class="filter-list">
+              <li>Casual <span>&rsaquo;</span></li>
+              <li>Formal <span>&rsaquo;</span></li>
+              <li>Party <span>&rsaquo;</span></li>
+              <li>Gym <span>&rsaquo;</span></li>
+            </ul>
+
+          </div>
+
+          <button type="button" class="apply-filter">Apply Filter</button>
+
+
+        </aside>
+      </div>
+
+      <!-- Right Side -->
+
+      <div class="col-12 col-lg-9">
+
+        <div class="catalogue-heading">
+          <h2>Casual</h2>
+
+          <div class="catalogue-sort">
+            <span>Showing 1-10 of 100 Products</span>
+
+
+
+          </div>
+
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-3 catalogue-products">
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </main>
 
 
 
