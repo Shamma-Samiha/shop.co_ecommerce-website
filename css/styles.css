@@ -1,3 +1,33 @@
+/* Announcement Bar */
+.announcement-bar {
+  background-color: #000;
+  color: #fff;
+  padding: 9px 10px;
+}
+
+.announcement-bar p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.announcement-bar a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline;
+  /*margin-left: 5px;*/
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .announcement-bar {
+    font-size: 12px;
+  }
+  .announcement-bar {
+    padding: 9px;
+  }
+}
 /* Navbar */
 .shop-navbar {
   background-color: #ffffff;
@@ -552,7 +582,10 @@
 }
 /* Catagory Page */
 .catalogue-page {
-  padding: 100px 0;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 70px;
+  padding-left: 0;
 }
 
 .catalogue-page .breadcrumb {
@@ -783,4 +816,60 @@
   border-radius: 62px;
   font-size: 12px;
   font-weight: 500;
+}
+
+/* Pagination */
+.catalogue-pagination {
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+  margin-top: 32px;
+  padding-top: 20px;
+}
+
+.pagination-btn {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-numbers {
+  gap: 2px;
+}
+
+.page-numbers button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-numbers button.active {
+  background: rgba(0, 0, 0, 0.0588235294);
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .page-btn {
+    font-size: 12px;
+    padding: 8px;
+    gap: 8px;
+  }
+  .page-numbers {
+    gap: 2px;
+  }
+  .page-numbers button {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
 }
