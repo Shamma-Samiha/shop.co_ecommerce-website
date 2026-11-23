@@ -18,8 +18,6 @@
     <title>SHOP.CO</title>
   </head>
   <body>
-    <main class="catalogue-page">
-      <div class="container">
 
       <!-- Navbar -->
      <nav class="navbar navbar-expand-lg shop-navbar">
@@ -68,6 +66,16 @@
       </div>
      </nav>
 
+
+
+
+
+
+
+    <main class="catalogue-page">
+      <div class="container">
+
+    
     <!-- Breadcrumd part -->
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -116,11 +124,16 @@
             <h5>Colors <i class="fa-solid fa-chevron-up"></i> </h5>
 
             <div class="filter-colors">
-              <button type="button" class="color-dot" style="background: green"></button>
-              <button type="button" class="color-dot" style="background: red"></button>
-              <button type="button" class="color-dot" style="background: blue"></button>
-              <button type="button" class="color-dot" style="background: yellow"></button>
-              <button type="button" class="color-dot" style="background: purple"></button>
+              <button type="button" class="color-dot" style="background: #00C12B"></button>
+              <button type="button" class="color-dot" style="background: #f50606"></button>
+              <button type="button" class="color-dot" style="background: #f5dd06"></button>
+              <button type="button" class="color-dot" style="background: #f57906"></button>
+              <button type="button" class="color-dot" style="background: #06CAF5"></button>
+              <button type="button" class="color-dot" style="background: #063AF5"></button>
+              <button type="button" class="color-dot" style="background: #7D06F5"></button>
+              <button type="button" class="color-dot" style="background: #F506A4"></button>
+              <button type="button" class="color-dot" style="background: #ffffff"></button>
+              <button type="button" class="color-dot" style="background: #000000"></button>
               
             </div>
 
@@ -166,17 +179,21 @@
 
       <div class="col-12 col-lg-9">
 
+        
         <div class="catalogue-heading">
-          <h2>Casual</h2>
+            <h2>Casual</h2>
 
-          <div class="catalogue-sort">
-            <span>Showing 1-10 of 100 Products</span>
-
-
-
-          </div>
-
+            <div class="catalogue-sort">
+              <span>Showing 1-10 of 100 Products</span>
+              <label for="sortProducts">Sort by:</label>
+              <select id="sortProducts">
+                <option>Most Popular</option>
+                <option>Low to High</option>
+                <option>High to Low</option>
+               </select>
+            </div>
         </div>
+
 
         <!-- Product Grid -->
         <div class="row g-3 catalogue-products">

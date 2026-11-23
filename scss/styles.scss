@@ -592,6 +592,15 @@
   margin-bottom: 24px;
 }
 
+.filter-section {
+  margin-bottom: 48px;
+}
+
+.filter-section input .form-range {
+  margin-bottom: 0;
+  background: #000;
+}
+
 .filter-section h5 {
   display: flex;
   justify-content: space-between;
@@ -670,14 +679,55 @@
 }
 
 .apply-filter {
-  width: 100%;
+  font-size: 14px;
+  height: 48px;
+  width: 247px;
+  max-width: 100%;
   background-color: black;
   color: white;
   border: none;
   border-radius: 62px;
-  padding: 14.5px 87.5px;
+  padding: 0 14.5px;
   margin-top: 24px;
 }
 
-/* Catalogue Right part */
+/* Catalogue Right part heading */
+.catalogue-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.catalogue-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.catalogue-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.catalogue-sort span {
+  color: #00000099;
+}
+
+.catalogue-sort label {
+  color: #00000099;
+
+}
+
+.catalogue-sort select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
 
