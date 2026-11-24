@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Font */
 @font-face {
   font-family: "Integral CF";
@@ -645,6 +646,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 .filter-title h4 {
@@ -655,6 +657,7 @@ body {
 
 .filter-section {
   margin-bottom: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 .filter-section input .form-range {
@@ -692,7 +695,7 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* Price Slider */
+/* Price-range Slider */
 .filter-section .form-range {
   accent-color: black;
   margin-bottom: 24px;
@@ -700,6 +703,10 @@ body {
 
 .filter-section span {
   font-size: 16px;
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: black;
 }
 
 /* Colors */
@@ -710,10 +717,22 @@ body {
 }
 
 .color-dot {
+  position: relative;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.color-dot:hover::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Sizes */
@@ -733,7 +752,7 @@ body {
   font-weight: 400;
 }
 
-.filter-sizes .selected {
+.filter-sizes button:hover {
   background-color: black;
   color: white;
 }
@@ -863,6 +882,7 @@ body {
 }
 
 .pagination-btn {
+  font-family: "Satoshi", sans-serif;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 8px;
@@ -1076,5 +1096,134 @@ body {
   .mobile-search-box .nav-search {
     margin-top: 15px;
     margin-bottom: 0;
+  }
+}
+/* mobile filter section of category page */
+.mobile-filter-btn,
+.filter-close {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .catalogue-page {
+    padding: 15px 0 50px;
+  }
+  .filter-column {
+    display: none;
+  }
+  .catalogue-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 29px;
+  }
+  .catalogue-heading h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .catalogue-sort {
+    flex: 1;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .catalogue-sort span {
+    overflow: hidden;
+  }
+  .catalogue-sort label,
+  .catalogue-sort select {
+    display: none;
+  }
+  .mobile-filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    flex-shrink: 0;
+  }
+  .catalogue-products .product-image {
+    border-radius: 13.42px;
+  }
+  .catalogue-products h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .catalogue-products .rating-stars {
+    font-size: 15px;
+    gap: 2px;
+    margin-bottom: 4.44px;
+  }
+  .catalogue-products .rating-number {
+    font-size: 12px;
+    margin-left: 11px;
+  }
+  .catalogue-products .product-price {
+    gap: 5px;
+  }
+  .catalogue-products .current-price,
+  .catalogue-products .old-price {
+    font-size: 20px;
+  }
+  .catalogue-products .discount {
+    width: auto;
+    height: auto;
+    padding: 3px 7px;
+    font-size: 10px;
+  }
+  .catalogue-page.filters-open .filter-column {
+    display: block;
+  }
+  .catalogue-page.filters-open .products-column,
+  .catalogue-page.filters-open nav[aria-label=breadcrumb] {
+    display: none;
+  }
+  .filter-panel {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .filter-title {
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .filter-title h4 {
+    margin: 0;
+  }
+  .filter-title > i {
+    display: none;
+  }
+  .filter-close {
+    display: block;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .filter-section {
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+  }
+  .filter-section h5 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .filter-list li {
+    margin-bottom: 14px;
+  }
+  .filter-colors {
+    gap: 15.5px;
+  }
+  .filter-sizes button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .apply-filter {
+    width: 100%;
   }
 }

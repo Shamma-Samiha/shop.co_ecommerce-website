@@ -113,12 +113,16 @@
     <div class="row g-4">
 
       <!-- Filters -->
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3 filter-column">
         <!-- Left Side -->
-        <aside class="filter-panel">
+        <aside class="filter-panel" id="catalogueFilters">
           <div class="filter-title">
             <h4>Filters</h4>
+
             <i class="fa-solid fa-sliders"></i> 
+            <button type="button" class="filter-close" id="closefilters">
+              &times;
+            </button>
           </div>
 
           <!-- Categories -->
@@ -133,7 +137,7 @@
           </div>
 
 
-          <!-- Price part -->
+          <!-- Price-range part -->
           <div class="filter-section">
             <h5>Price<i class="fa-solid fa-chevron-up"></i></h5>
             <input type="range" class="form-range" min="50" max="200" value="150">
@@ -184,7 +188,7 @@
 
           <!-- Dress Style -->
           <div class="filter-section">
-            <h5>Size <i class="fa-solid fa=chevron-up"></i> </h5>
+            <h5>Size <i class="fa-solid fa-chevron-up"></i> </h5>
 
             <ul class="filter-list">
               <li>Casual <span>&rsaquo;</span></li>
@@ -195,7 +199,7 @@
 
           </div>
 
-          <button type="button" class="apply-filter">Apply Filter</button>
+          <button type="button" class="apply-filter" id="applyfilters">Apply Filter</button>
 
 
         </aside>
@@ -203,7 +207,7 @@
 
       <!-- Right Side -->
 
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-lg-9 products-column">
 
         
         <div class="catalogue-heading">
@@ -218,6 +222,10 @@
                 <option>High to Low</option>
                </select>
             </div>
+
+            <button type="button" class="mobile-filter-btn" id="openfilters">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
         </div>
 
 
@@ -437,7 +445,7 @@
         <!-- Pagination -->
         <nav class="catalogue-pagination d-flex justify-content-between align-items-center">
 
-          <button type="button" class="pagination-btn"> <i class="fa-solid fa-arrow-left">Previous</i></button>
+          <button type="button" class="pagination-btn"> <i class="fa-solid fa-arrow-left"></i>Previous</button>
 
           <!-- Adding page numbers -->
           <div class="page-numbers d-flex align-items-center">
@@ -451,88 +459,16 @@
 
           </div>
 
-          <button type="button" class="pagination-btn"> <i class="fa-solid fa-arrow-right">Next</i></button>
+          <button type="button" class="pagination-btn"> Next<i class="fa-solid fa-arrow-right"></i></button>
 
         </nav>
 
 
       </div>
 
-
-
-
-
     </div>
-
-      
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Footer Section -->
