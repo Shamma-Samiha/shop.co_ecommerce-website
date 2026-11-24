@@ -1,3 +1,32 @@
+/* Font */
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/Integral CF.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
 /* Announcement Bar */
 .announcement-bar {
   background-color: #000;
@@ -35,6 +64,7 @@
 }
 
 .shop-navbar .navbar-brand {
+  font-family: "Integral CF", sans-serif;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0%;
@@ -113,6 +143,7 @@
 }
 
 .hero-title {
+  font-family: "Integral CF", sans-serif;
   font-size: 64px;
   font-weight: 700;
   color: #000;
@@ -190,6 +221,7 @@
 }
 
 .new-arrivals .section-title {
+  font-family: "Integral CF", sans-serif;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -203,6 +235,7 @@
 }
 
 .top-selling .section-title {
+  font-family: "Integral CF", sans-serif;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -304,6 +337,7 @@
 }
 
 .dress-style-heading {
+  font-family: "Integral CF", sans-serif;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -350,6 +384,7 @@
 }
 
 .review-heading h2 {
+  font-family: "Integral CF", sans-serif;
   display: flex;
   font-size: 48px;
   font-weight: 700;
@@ -435,6 +470,7 @@
 }
 
 .subscribe-title {
+  font-family: "Integral CF", sans-serif;
   color: #fff;
   font-size: 40px;
   font-weight: 800;
@@ -477,6 +513,7 @@
 }
 
 .footer-logo {
+  font-family: "Integral CF", sans-serif;
   color: #000000;
   font-size: 33.45px;
   font-weight: 700;
@@ -857,9 +894,9 @@
   color: black;
 }
 
-/* Mobile */
+/* Mobile - Pagination */
 @media (max-width: 767px) {
-  .page-btn {
+  .pagination-btn {
     font-size: 12px;
     padding: 8px;
     gap: 8px;
@@ -871,5 +908,104 @@
     width: 36px;
     height: 36px;
     font-size: 12px;
+  }
+}
+.hero-mobile-image {
+  display: none;
+}
+
+/* Mobile - Hero Section */
+@media (max-width: 767px) {
+  .hero {
+    background-image: none;
+    background-color: #f2f0f1;
+    /* min-height: 0;*/
+    padding-bottom: 0;
+  }
+  .hero-content {
+    max-width: 100%;
+    padding: 40px 0;
+  }
+  .hero-mobile-image {
+    display: block;
+    background-color: #f2f0f1;
+  }
+  .hero-mobile-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hero-title {
+    width: 315px;
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .hero-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  .hero-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+  }
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+    row-gap: 20px;
+  }
+  .stat {
+    width: 50%;
+    padding: 0 8px;
+    text-align: center;
+    border-right: none;
+  }
+  .stat:first-child {
+    border-right: 1px solid #ccc;
+  }
+  .stat:last-child {
+    width: 100%;
+  }
+  .stat h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  .stat p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .brands-section {
+    margin-top: 0;
+  }
+}
+/* Mobile - Copyright section */
+@media (max-width: 767px) {
+  .footer-bottom {
+    margin-top: 40px;
+    padding-top: 16px;
+  }
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .copyright-text {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+  }
+  .payment-icons {
+    margin-left: 0;
+    justify-content: center;
+    gap: 10.29px;
+  }
+  .payment-icons img {
+    width: 40px;
+    height: 25.74px;
+    object-fit: contain;
   }
 }
