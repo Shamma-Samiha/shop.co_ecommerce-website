@@ -673,8 +673,9 @@ body {
 }
 
 .filter-section {
-  margin-bottom: 48px;
-  border-bottom: 1px solid #0000001A
+  border-top: 1px solid #0000001A;
+  margin-bottom: 24px;
+  padding-top:24px;
 }
 
 .filter-section input .form-range {
