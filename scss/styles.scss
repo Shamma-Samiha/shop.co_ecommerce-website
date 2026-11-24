@@ -941,7 +941,7 @@ body {
   .hero {
     background-image: none;
     background-color: #f2f0f1;
-    /* min-height: 0;*/
+    min-height: 0;
     padding-bottom: 0;
   }
 
@@ -1053,6 +1053,88 @@ body {
 
 }
 
+/* Fixing Mobile Navbar */
+
+.mobile-nav-actions {
+  display: none;
+}
+
+.mobile-search-box {
+  display: none;
+}
+
+@media (max-width: 991px) {
+
+  .shop-navbar {
+    padding: 15px 0;
+  }
+
+  .shop-navbar .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .shop-navbar .navbar-toggler {
+    order: 1;
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+    box-shadow: none;
+  }
+
+  .navbar-toggler img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .shop-navbar .navbar-brand {
+    order: 2;
+    font-size: 25.2px;
+    margin-right: 0;
+  }
+
+  .mobile-nav-actions {
+    order: 3;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: auto;
+  }
+
+  .mobile-nav-actions img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .mobile-nav-actions button {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .shop-navbar .navbar-collapse {
+    order: 4;
+    width: 100%;
+  }
+
+  .shop-navbar .navbar-collapse .nav-search,
+  .shop-navbar .navbar-collapse .nav-actions {
+    display: none;
+  }
+
+  .mobile-search-box {
+    order: 5;
+    width: 100%;
+  }
+
+  .mobile-search-box .nav-search {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
 
 
 
