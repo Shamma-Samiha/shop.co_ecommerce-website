@@ -1316,5 +1316,55 @@ body {
   }
 }
 
+/* For Smaller Screens */
+@media (max-width: 576px) {
+
+  .product-card {
+    min-width: 0;
+  }
+
+  .product-info {
+    min-width: 0;
+  }
+
+  .product-title {
+    font-size: 16px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .product-stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .product-rating-text {
+    font-size: 12px;
+  }
+
+  .product-price-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .current-price {
+    font-size: 20px;
+  }
+
+  .old-price {
+    font-size: 15px;
+  }
+}
 
 
